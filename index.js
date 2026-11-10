@@ -11,15 +11,14 @@ app.use(express.json());
 
 
 app.use("/livres", livresRoutes);
-app.use("/adherents", adherents);
-app.use("/emprunts", emprunts);
+app.use("/adherents", adherentsRoutes);
+app.use("/emprunts", empruntsRoutes);
 
 
 
 
 
 app.listen(3000, () => console.log("Serveur sur http://localhost:3000"));
-
 
 
 
