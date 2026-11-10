@@ -13,7 +13,6 @@ let livres = [
 router.get("/", (req, res) => res.json(livres));
 
 
-
 // GET /livres/:id
 
 router.get("/:id", (req, res) => {
@@ -25,7 +24,6 @@ router.get("/:id", (req, res) => {
   }
   res.status(200).json(livre);
 });
-
 
 
 // POST /livres
@@ -70,6 +68,9 @@ router.patch("/livres/:id", (req, res) => {
 
 
 })
+
+
+
 
 export default router;
 
